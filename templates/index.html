@@ -1,0 +1,82 @@
+
+{% extends "base.html" %}
+{% block content %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>Proof Of Concept</title>
+  </head>
+  <body>
+    <div class="container mt-5">
+      <!-- Default heading -->
+<h1>Heading 1</h1>
+
+<!-- Heading with secondary color -->
+<h2 class="text-secondary">Heading 2</h2>
+
+<!-- Heading with background color -->
+<h3 class="bg-primary text-white p-3" style="background-color: blueviolet  !important;">Heading 3</h3>
+
+<!-- Heading with underline -->
+<h4 class="text-decoration-underline">Heading 4</h4>
+<!-- Basic link -->
+<a href="#">Link</a>
+
+<!-- Link with icon -->
+<a href="#"><i class="fas fa-arrow-right"></i> Link with icon</a>
+<!-- Disabled link -->
+<a href="#" class="text-muted" tabindex="-1" aria-disabled="true">Disabled link</a>
+<div>
+
+<button type="button" class="btn btn-primary" style="background-color: blueviolet  !important;">Primary</button>
+
+<!-- Button with icon -->
+<button type="button" class="btn btn-secondary"><i class="fas fa-arrow-right"></i> Next</button>
+
+<!-- Button with dropdown -->
+<div class="btn-group">
+  <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color:rgba(21,21,30,.7) !important; border-color: black;">
+    Action
+  </button>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#">Action</a>
+    <a class="dropdown-item" href="#">Another action</a>
+    <a class="dropdown-item" href="#">Something else here</a>
+    <div class="dropdown-divider"></div>
+    <a class="dropdown-item" href="#">Separated link</a>
+  </div>
+</div>
+<a href="javascript:void(0);" id="button" class="button">Hover effects</a>
+</div>
+<label for="file">Select a file:</label><br>
+<div class="file-upload">
+  <div class="file-select">
+    <div class="file-select-button" id="fileName">Choose File</div>
+    <div class="file-select-name" id="noFile">No file chosen...</div> 
+    <input type="file" name="chooseFile" id="chooseFile">
+  </div>
+</div>
+
+<form method="post" action="/upload" enctype="multipart/form-data">
+    <label for="file">Select a file:</label><br>
+    <input type="file" id="file" name="file"><br>
+    <input type="submit" value="Submit">
+  </form>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.16.6/dist/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
+
+</html>
+  {% endblock %}
