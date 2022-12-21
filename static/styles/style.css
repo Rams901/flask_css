@@ -1,0 +1,18 @@
+body {
+    background-color: #8f8b8b !important;
+}
+
+h3.bg-primary{
+    background-color: blueviolet !important;
+}
+
+button.btn-primary{
+    background-color: blueviolet ;
+    border-color: blueviolet;
+}
+button.btn-primary:hover{
+    background-color: rgb(38, 20, 54) ;
+    border-color: blueviolet;
+}
+
+
